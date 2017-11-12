@@ -1,0 +1,234 @@
+@media screen and (max-width: 992px) {
+  .main_header {
+    height: 700px;
+  }
+  .mh_logo {
+    padding-left: 50px;
+  }
+  .min_mnu {
+    right: 50px;
+  }
+  .single-slider {
+    width: 235px;
+  }
+  .slick-slider img[src="img/prev_arrow.png"] {
+    margin-top: 40px;
+  }
+  .slick-slider img[src="img/next_arrow.png"] {
+    top: 40px;
+  }
+  .slick-slide img {
+    width: 235px;
+    height: 400px;
+  }
+  .sliders {
+    width: 750px;
+  }
+  .text {
+    width: 200px;
+  }
+  width: 450px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  .single_person {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    float: left;
+  }
+  .pers_img {
+    width: 122px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .name {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .pers_description {
+    color: #666666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .people {
+    width: 440px;
+  }
+  .activity_images {
+    width: 750px;
+  }
+  .sm_img {
+    width: 236px;
+    height: 313px;
+  }
+  .big_img {
+    width: 494px;
+    height: 313px;
+  }
+  .footer_block {
+    width: 690px;
+  }
+  .footer_block ul li {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slide img {
+    width: 300px;
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .single-slider {
+    width: 300px;
+  }
+  .sliders {
+    width: 300px;
+  }
+  .sliders p {
+    margin-top: 40px;
+  }
+  .slick-slider img.slick-arrow {
+    display: none;
+  }
+  .text {
+    width: 260px;
+  }
+  .activity_images {
+    width: 300px;
+  }
+  .sm_img {
+    width: 300px;
+    height: 120px;
+  }
+  .big_img {
+    width: 300px;
+    height: 120px;
+  }
+  .img_block p {
+    line-height: 120px;
+  }
+  .img_block:last-child {
+    margin-left: 0px;
+  }
+  .footer_block {
+    width: 294px;
+  }
+  .footer_block ul {
+    width: 294px;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .footer_block ul li {
+    display: inline;
+    margin-left: auto;
+  }
+  .footer_logo {
+    width: 294px;
+    text-align: center;
+  }
+  .footer_logo_2 {
+    width: 294px;
+    float: none;
+    text-align: center;
+  }
+  .parthner_button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .parthner_button a {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main_header {
+    height: 540px;
+  }
+  .mh_logo {
+    float: none;
+    padding-top: 250px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .min_mnu {
+    padding-top: 25px;
+    right: none;
+    float: none;
+    top: 0px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .composition {
+    padding-top: 15px;
+  }
+  .composition p {
+    font-size: 30px;
+  }
+  .composition #underComposition {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+  .header_button {
+    margin-top: 30px;
+  }
+  .header_button a {
+    padding: 13px 50px;
+  }
+  .people {
+    width: 200px;
+  }
+  .main_title {
+    margin-top: 10px;
+  }
+  .interests_form {
+    width: 294px;
+  }
+  input[type='text'] {
+    width: 290px !important;
+  }
+  input[type='submit'] {
+    width: 290px;
+    margin-top: 20px;
+  }
+  .single_person {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slick-slide img {
+    width: 280px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .single-slider {
+    width: 280px;
+  }
+  .sliders {
+    width: 280px;
+  }
+  .sliders p {
+    margin-top: 40px;
+  }
+  .slick-slider img.slick-arrow {
+    display: none;
+  }
+  .text {
+    width: 240px;
+  }
+  .slider {
+    margin-left: 0;
+  }
+}
