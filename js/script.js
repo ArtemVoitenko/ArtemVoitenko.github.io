@@ -104,4 +104,13 @@ $(document).ready(function () {
         var $shop_circle = $slide.children('button.shop_circle');
         $shop_circle.hide();
     });
+
+    $('.show_footer').click(function(e){
+        e.preventDefault();
+       $('.footer').slideToggle();
+        $('html, body').animate({
+        scrollTop: $('.footer').offset().top
+    }, 500);
+        
+    });
 });

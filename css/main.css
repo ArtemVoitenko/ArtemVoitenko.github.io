@@ -98,7 +98,7 @@ body input {
 
 .single_slide {
   display: inline-block;
-  background-color: #ece8df;
+  background-color: #EDE5DD;
   text-align: center;
   position: relative;
 }
@@ -305,10 +305,21 @@ body input {
   color: #fff;
 }
 
+.menu_button .fa-bars {
+  line-height: 45px;
+  margin-right: 10px;
+  float: right;
+}
+
 .menu_button:hover {
   background-color: #f8a883;
   text-decoration: none;
   color: #fff;
+}
+
+.second {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #EDEDED;
 }
 
 .second_slider_wrapper {
@@ -339,7 +350,7 @@ body input {
 
 .show_tabs {
   margin-top: 10px;
-  margin-bottom: 10px;
+  border-bottom: 1px solid #fd7f54;
   display: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -348,6 +359,12 @@ body input {
   background-color: #fd926d;
   text-decoration: none;
   color: #fff;
+}
+
+.show_tabs .fa-caret-down {
+  line-height: 45px;
+  margin-right: 10px;
+  float: right;
 }
 
 .show_tabs:hover {
@@ -480,9 +497,14 @@ body input {
   font-size: 20px;
 }
 
+.clearence {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #EDEDED;
+}
+
 .sale_img {
   text-align: center;
-  margin-top: 20px;
 }
 
 .test {
@@ -505,4 +527,162 @@ body input {
   right: 0;
   left: 0;
   margin: 0 auto;
+}
+
+.brands_section {
+  border-bottom: 2px solid #EDEDED;
+}
+
+.brands_block {
+  padding-bottom: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.brands_block img {
+  margin-right: 3%;
+  margin-top: 30px;
+}
+
+.brands_block h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "ArialBold";
+  font-weight: 400;
+}
+
+.about_section {
+  text-align: center;
+}
+
+.payments {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 20px 0px;
+}
+
+.payments img {
+  margin-left: 10px;
+}
+
+.payments span {
+  vertical-align: middle;
+  color: #B6B6B6;
+  font-size: 12px;
+  font-family: "Arial";
+}
+
+footer {
+  background-color: #EDEDED;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: #544f4d;
+  font-size: 12px;
+  font-family: 'Arial';
+}
+
+.footer_titles {
+  font-family: "ArialBold";
+  font-size: 16px;
+  color: #544f4d;
+  margin-top: 20px;
+}
+
+.social li, .social_2 li {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social_2 {
+  margin-top: -20px;
+}
+
+#twitter {
+  background: url("../img/social_sprite.png") 0 0;
+}
+
+#pinterest {
+  background: url("../img/social_sprite.png")-45px 0;
+}
+
+#facebook {
+  background: url("../img/social_sprite.png")-90px 0;
+}
+
+#google {
+  background: url("../img/social_sprite.png") 0px -42px;
+}
+
+#telegram {
+  background: url("../img/social_sprite.png") -46px -42px;
+}
+
+#viber {
+  background: url("../img/social_sprite.png") -91px -42px;
+}
+
+.secured img {
+  margin-top: 35px;
+}
+
+.show_footer {
+  display: none;
+  height: 75px;
+  background-color: #000;
+  line-height: 75px;
+  color: #fff;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.privacy {
+  margin-top: 25px;
+  display: block;
+  float: right;
+  margin-right: 20px;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.footer_nav {
+  background-color: #000;
+  height: 75px;
+  line-height: 75px;
+}
+
+.footer_nav ul {
+  margin: 0;
+  display: inline-block;
+}
+
+.footer_nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.footer_nav ul li:after {
+  content: '|';
+  margin: 20px;
+  color: #8E8E8E;
+}
+
+.footer_nav ul li:last-child:after {
+  content: "";
+  margin: 0px;
+}
+
+.footer_nav ul li a {
+  color: #8E8E8E;
 }

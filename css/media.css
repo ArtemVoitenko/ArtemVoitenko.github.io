@@ -111,6 +111,15 @@
   .second_slider {
     width: 480px;
   }
+  .show_footer {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+  .footer_nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -121,6 +130,7 @@
     display: block;
   }
   .tabs_list {
+    margin-top: 5px;
     display: none;
   }
   .tabs_list li {
@@ -137,5 +147,14 @@
   }
   .sale_block {
     width: 240px;
+  }
+  .brands_section {
+    display: none;
+  }
+  .about_section {
+    display: none;
+  }
+  .payments {
+    display: none;
   }
 }
