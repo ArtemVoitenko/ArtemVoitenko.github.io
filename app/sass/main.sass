@@ -1,0 +1,154 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+*
+    margin: 0
+    padding: 0
+    outline: none
+
+.header    
+    
+    background:
+      image: url(../img/hero-background.jpg)
+      size: cover
+      position: center
+      attachment: fixed
+    
+    padding: 40px 120px 300px 120px
+    color: $white
+    
+    text-transform: uppercase
+    h1
+        font-family: "RalewayBold"
+        font-size: 72px
+        text-align: center 
+        
+        line-height: 1em
+        margin: 0 0 15px
+        margin-top: 220px
+        letter-spacing: .08em
+    p
+        text-align: center
+        font-size: 30px
+        font-family: 'OpenSansRegular'
+        
+        letter-spacing: .04em
+.logo
+    max-width: 100%;
+    height: auto;
+        
+.headerTop
+    
+    float: right
+    line-height: 0.8em
+.topMenu
+    display: inline-block
+    li
+        display: inline
+        margin-right: 45px
+        text-decoration: none
+        a
+            font-size: 16px
+            text-transform: uppercase
+            font-family: "RalewayBold"
+            color: $white
+            letter-spacing: 0.64px
+            transition: all 225ms ease-in-out
+            &:hover
+                color: $red
+                text-decoration: none
+            &:focus
+                text-decoration: none
+            &:active
+                text-decoration: none
+            &:visited
+                text-decoration: none
+                
+.signUpButton
+    color: #fff
+    padding: 10px 35px
+    background-color: transparent
+    border: 1px solid $white
+    border-radius: 5px
+    font-size: 16px
+    text-transform: uppercase
+    font-family: "RalewayBold"
+    color: $white
+    letter-spacing: 0.64px
+    transition: all 225ms ease-in-out
+    &:hover
+        color: $blueHover
+        background-color: $white
+.headerInput
+    width: 70%
+    height: 60px
+    border: none
+    padding-left: 30px
+    font-size: 14px
+    font-family: "RalewayRegular"
+    text-transform: uppercase
+    border-radius: 5px 0px 0px 5px
+    color: $blueHover        
+    
+
+.findButton
+    background-color: $red
+    height: 60px
+    width: 29%
+    margin-left: -4px
+    border: none
+    font-size: 14px
+    font-family: "RalewayBold"
+    text-transform: uppercase
+    border-radius: 0px 5px 5px 0px
+    background-image: url(../img/ship.png)
+    background-repeat: no-repeat
+    background-position: 15% 50%
+    transition: all 225ms ease-in-out
+    padding-left: 20px
+    
+    &:hover
+        background-color: $blueHover
+        
+    
+.headerForm
+    margin-top: 70px
+.statisticsBlock
+    0px 0px 30px 0px rgba(52, 52, 52, 0.15)
+        
+.statisticsList
+    text-align: center
+    margin-top: -70px
+    
+    z-index: 1
+    li
+        text-align: center
+        display: inline-block
+        padding: 40px 100px
+        background-color: $white
+        margin-right: -4px
+        border-right: 1px solid #717171
+        &:last-child
+            border-right: none
+        span
+            font-size: 30px
+            font-family: "OpenSansBold"
+        p
+            font-family: "OpenSansRegular"
+            18px
+            
+            
+    
+    
+    
+    
+    
+    
+    
+            
+
+            
+
+    
+
+@import "media" // Всегда в конце
