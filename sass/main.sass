@@ -18,6 +18,7 @@
     color: $white
     
     text-transform: uppercase
+.bigTitle
     h1
         font-family: "RalewayBold"
         font-size: 72px
@@ -113,8 +114,7 @@
     
 .headerForm
     margin-top: 70px
-.statisticsBlock
-    0px 0px 30px 0px rgba(52, 52, 52, 0.15)
+    
         
 .statisticsList
     text-align: center
@@ -127,7 +127,13 @@
         padding: 40px 100px
         background-color: $white
         margin-right: -4px
-        border-right: 1px solid #717171
+        border-right: 1px solid #F3F3F3
+        box-shadow: 0px 0px 30px 0px rgba(52, 52, 52, 0.15)
+        &:first-child 
+            border-radius: 5px 0 0 5px
+        &:last-child
+            border-radius: 0 5px 5px 0px
+
         &:last-child
             border-right: none
         span
@@ -135,7 +141,264 @@
             font-family: "OpenSansBold"
         p
             font-family: "OpenSansRegular"
-            18px
+            font-size: 18px
+h3
+    text-align: center
+    font-family: "RalewayRegular"
+    font-size: 30px
+    line-height: 60px
+    letter-spacing: 0.04em
+    font-weight: 500
+    text-transform: uppercase
+    color: #343435;
+    margin-top: 70px
+.underTitle
+    font-family: 'OpenSansRegular'
+    font-size: 16px
+    text-align: center
+    letter-spacing: 0.32px
+    color: #717171
+    line-height: 22px
+    margin-bottom: 75px
+.dBigImg
+    width: 64%
+    height: auto
+    margin-right: 2%
+    margin-bottom: 40px
+    display: inline-block
+    overflow: hidden
+    border-radius: 5px
+    position: relative
+    
+.dSmallImg
+    width: 31%
+    height: auto
+    margin-right: 2%
+    margin-bottom: 40px
+    display: inline-block
+    overflow: hidden
+    border-radius: 5px
+    position: relative
+.dPlace
+    position: absolute
+    z-index: 2
+    bottom: 0 
+    left: 0
+    padding-left: 20px
+    padding-bottom: 20px
+    display: block
+    width: 100%
+    background: linear-gradient(to bottom, transparent, #000)
+    padding-top: 40px
+    display: none
+.city
+    font-size: 30px
+    color: $white
+    font-family: "RalewayRegular"
+    font-weight: 500
+.country
+    font-size: 20px
+    font-weight: 1em
+    color: $white
+    font-family: "RalewayRegular"
+    font-weight: 500
+    
+
+.moreButton
+    font-size: 14px
+    text-transform: uppercase
+    font-family: "RalewayBold"
+    color: #343434
+    border: 1px solid rgba(38, 38, 38, 0.3)
+    border-radius: 5px
+    background-color: #fff
+    width: 310px;
+    height: 60px;
+    left: 0
+    right: 0
+    margin: 0 auto
+    display: block
+    text-align: center
+    margin-top: 30px
+    &:hover
+        background-color: #F5F5F5
+        transition: all 225ms ease-in-out
+.ownBoat
+    margin-top: 70px
+    background:
+      image: url(../img/rent-boat-background.jpg)
+      size: cover
+      position: center
+      attachment: fixed
+    height: 550px
+    color: $white
+    text-transform: uppercase
+.secondBigTitle
+    h1
+        margin-top: 0px
+        padding-top: 150px
+.makeMoneyButton
+    background-color: $red
+    height: 60px
+    border: none
+    font-size: 14px
+    font-family: "RalewayBold"
+    text-transform: uppercase
+    border-radius: 5px
+    transition: all 225ms ease-in-out
+    left: 0
+    right: 0
+    margin: 0 auto
+    display: block
+    padding:
+        left: 45px
+        right: 45px
+    color: $white
+    margin-top: 90px
+    &:hover
+        background-color: $blueHover
+.scaleImg
+        width: 100%
+        height: auto
+        transition: all 225ms ease-in-out
+        transform: scale(1.045)
+        width: 100%
+        &:hover
+            transform: scale(1)
+            max-width: 100%;
+            height: auto
+            width: 100%
+            
+
+            
+        
+.boatsButton
+    margin-top: 70px
+.sizing
+    width: 95%
+    height: auto
+    overflow: hidden
+    border-radius: 5px
+    display: inline-block
+    margin-top: 25px
+    position: relative
+    
+.redNumb
+    position: absolute
+    left: 20px
+    top: 30px
+    background-image: url(../img/ship.png)
+    background-position: 15px 12px
+    background-repeat: no-repeat
+    background-color: $red
+    padding-left: 40px
+    padding-right: 10px
+    height: 40px
+    line-height: 40px
+    font-size: 16px
+    letter-spacing: 0.04em
+    font-family: "OpenSansBold"
+    color: #fff
+    font-weight: 700
+    border-radius: 5px
+.footer
+    margin-top: 70px
+    background-image: url(../img/footer-border.png)
+    background-repeat: repeat-x
+    background-position: 0 0
+    background-color: #404040
+    padding-bottom: 50px
+.footerTitle
+    text-transform: uppercase
+    letter-spacing: 0.04em
+    font-weight: 700
+    line-height: 1em
+    font-size: 14px
+    margin: 50px 0 20px
+    color: $white
+.footerNav
+    li
+        list-style-type: none
+        a
+            color: $white
+            text-decoration: none
+            font-family: "OpenSansRegular"
+            letter-spacing: 0.04em
+            line-height: 1.9em
+            transition: all 225ms ease-in-out
+            &:hover
+                color: $red
+.footerForm
+    height: 40px
+    width: 100%
+    display: block
+    
+    input
+        width: 69%
+        background-color: $white
+        height: 40px
+        border: none
+        display: inline-block
+        float: left
+        padding-left: 20px
+        font-size: 14px
+        font-family: "RalewayRegular"
+        border-radius: 5px 0px 0px 5px
+        color: $blueHover
+
+.subscribeBtn
+    width: 29%
+    margin-left: -3px
+    height: 40px
+    border: none
+    display: inline-block
+    background-color: $red
+    font-family: "RalewayBold"
+    text-transform: uppercase
+    border-radius: 0px 5px 5px 0px
+    color: $white
+    &:hover
+        background-color: $blueHover
+.social
+    margin-top: 20px
+    
+    
+    display: inline-block
+    li
+        list-style-type: none
+        display: inline-block
+        margin-right: 15px
+        margin-top: 20px
+        i
+            text-align: center
+            font-weight: 500
+            -webkit-transition: inherit
+            transition: inherit
+            background: #717171
+            line-height: 44px
+            font-size: 18px 
+            color: $white
+            height: 44px
+            width: 44px
+            border-radius: 50%
+            background-color: #717171
+            
+
+                    
+        
+    
+
+    
+    
+   
+
+    
+    
+
+
+  
+
+    
             
             
     
