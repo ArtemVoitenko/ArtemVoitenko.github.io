@@ -40,7 +40,7 @@ $(function() {
 		$nav.slideToggle();
 
 
-	})
+	});
 	var $mnuLink = $(".mainNav a")
 	 $mnuLink.on("click", function (event) {
         event.preventDefault();
@@ -48,5 +48,31 @@ $(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+	var $closeButton = $('.close');
+	var $modal = $('.modal');
+	$closeButton.click(function(){
+	$modal.hide();
+	});
+var $showModal = $('.showModal');
+var $modalImg = $('.modal img');
+var $modalImgSrc = $modalImg.attr('src');
+
+ 
+ $showModal.click(function(e){
+ 	e.preventDefault();
+ 	var $thsh = $(this);
+ 	var $thImg=$thsh.next();
+ 	var $ourSrc = $thImg.attr('src');
+ 	$modalImg.attr("src" ,$ourSrc);
+ 	var $showModPar = $(this).parent();
+ 	var $descr = $showModPar.next();
+ 	var $modalTitle = $descr.children('p').text();
+ 	$modal.children("p").text($modalTitle);
+ 	$modal.show();
+
+ 	
+
+ });
 });
 
