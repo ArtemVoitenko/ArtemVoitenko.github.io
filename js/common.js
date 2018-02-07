@@ -1,4 +1,5 @@
 $(function () {
+	// Аккордеон + изменение (+-)
     var $item = $('.sideBarItem');
     var flag = false;
     $item.click(function (e) {
@@ -14,6 +15,8 @@ $(function () {
         $sub.slideToggle();
 
     });
+    /***************************************************************/
+    // Позунок цены
     $(".sliderRange").slider({
         range: true,
         min: 70,
@@ -26,6 +29,8 @@ $(function () {
     });
     $("#amountMin").val($(".sliderRange").slider("values", 0));
     $("#amountMax").val($(".sliderRange").slider("values", 1));
+    /***************************************************************/
+    // Плавающее меню
     var mainNavLi = $(".mainNav li");
     $(window).scroll(function () {
 
@@ -50,6 +55,8 @@ $(function () {
             mainNavLi.css("lineHeight", "130px");
         }
     });
+/***************************************************************/
+// Обработка кликов кнопок
     var showNav = $('.showNav');
     var mainNav = $(".mainNav")
     showNav.click(function (e) {
@@ -75,8 +82,17 @@ $(function () {
         e.preventDefault();
         modal.show(1000)
     });
-
-
+/***************************************************************/
+// Скрытие модалки при клике вне окна
+    $(document).mouseup(function (e){
+		 
+		if (!$(".modal").is(e.target) 
+		    && $(".modal").has(e.target).length === 0) {  
+			$(".modalSection").hide(1000); 
+		}
+	});
+/***************************************************************/
+// Сортировка по цене
     $("#sort").change(function () {
         var selectValue = $("select#sort option:selected").val();
         if (selectValue == 1) {
@@ -95,13 +111,14 @@ $(function () {
             location.reload();
         }
     });
+/***************************************************************/
+/* Валидация формы (каждое поле проверяется при потере фокуса, результат проверки каждого записывается в отдельную булевую  переменную, после чего если все переменные равны true, тоесть прошли проверку активируется submit)*/
     var numb1 = $('#numb1');
     var numb2 = $('#numb2');
     var numb3 = $('#numb3');
     var numb4 = $('#numb4');
     var cardHolder = $("#cardHolder");
-    var cvv = $("#cvv");
-    console.log(numb1);
+    var cvv = $("#cvv");;
     var $validResult1 = false;
     var $validResult2 = false;
     var $validResult3 = false;
@@ -110,7 +127,6 @@ $(function () {
     var $validResult6 = false;
     var submit = $('.payBtn');
     submit.prop('disabled', true);
-
     function res() {
         if (($validResult1 && $validResult2 && $validResult3 && $validResult4 && $validResult5 && $validResult6) == true) {
             submit.prop('disabled', false);
@@ -119,196 +135,148 @@ $(function () {
         }
     }
     res();
-
     var $validat1 = numb1.blur(function () {
-
         if ($(this).val() != '') {
-
             var pattern = /^[0-9]{4}$/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult1 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult1 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult1 = false
         }
-
         res();
-
     });
     var $validat2 = numb2.blur(function () {
-        console.log('sdcd');
         if ($(this).val() != '') {
-
             var pattern = /^[0-9]{4}$/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult2 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult2 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult2 = false
         }
-
         res();
     });
     var $validat3 = numb3.blur(function () {
-        console.log('sdcd');
+
         if ($(this).val() != '') {
-
             var pattern = /^[0-9]{4}$/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult3 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult3 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult3 = false
         }
-
         res();
-
     });
     var $validat4 = numb4.blur(function () {
-        console.log('sdcd');
         if ($(this).val() != '') {
-
             var pattern = /^[0-9]{4}$/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult4 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult4 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult4 = false
         }
         res();
     });
-    var $validat5 = cardHolder.blur(function () {
-        console.log('sdcd');
+    var $validat5 = cardHolder.blur(function () {;
         if ($(this).val() != '') {
-
             var pattern = /(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult5 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult5 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult5 = false
         }
         res();
     });
     var $validat6 = cvv.blur(function () {
-        console.log('sdcd');
         if ($(this).val() != '') {
-
             var pattern = /^[0-9]{3}$/;
-
             if (pattern.test($(this).val())) {
-
                 $(this).css({
                     'border': '1px solid #569b44'
                 });
                 $validResult6 = true;
-
             } else {
                 $(this).css({
                     'border': '1px solid #ff0000'
                 });
-
                 $validResult6 = false
             }
         } else {
             $(this).css({
                 'border': '1px solid #ff0000'
             });
-
             $validResult6 = false
         }
         res();
     });
+ /***************************************************************/
+ // Вытягивание текста AJAX
     var ajaxBtn = $(".headerBtn");
     var ajaxSect = $(".ajaxSection")
     ajaxBtn.click(function (e) {
         e.preventDefault();
         loadXMLDoc();
         ajaxSect.show(1000);
-
-
     });
-
     function loadXMLDoc() {
         var xmlhttp;
         if (XMLHttpRequest) {
@@ -324,6 +292,6 @@ $(function () {
         xmlhttp.open("GET", "ajax.txt", true); 
         xmlhttp.send();
     }
-
+/***************************************************************/
 
 });
