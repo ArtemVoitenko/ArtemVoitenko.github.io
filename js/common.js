@@ -326,15 +326,15 @@ var $product = $(".product")
  	switch ($(this).index()) {
   case 0:  
  	var filt = $product.filter('[data-type="blanket"]');
-	$product.hide(600);
+	$product.hide();
     break;
    case 1:  
  	var filt = $product.filter('[data-type="cover"]');
-	$product.hide(600);
+	$product.hide();
     break;
   case 2:  
  	var filt = $product.filter('[data-type="gobelen"]');
-	$product.hide(600);
+	$product.hide();
     break;
 
   case 4:
@@ -342,6 +342,6 @@ var $product = $(".product")
     break;
 }
 
-filt.show(600);
+filt.show();
  });
 });
