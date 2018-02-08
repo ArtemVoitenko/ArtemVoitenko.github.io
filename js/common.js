@@ -84,26 +84,29 @@ $(function () {
     });
 /***************************************************************/
 // Скрытие модалки при клике вне окна
+var popUp = $(".modal");
     $(document).mouseup(function (e){
 		 
-		if (!$(".modal").is(e.target) 
-		    && $(".modal").has(e.target).length === 0) {  
+		if (!popUp.is(e.target) 
+		    && popUp.has(e.target).length === 0) {  
 			$(".modalSection").hide(1000); 
 		}
 	});
 /***************************************************************/
 // Сортировка по цене
+var $productWrapper = $('.productsDiv');
+var $product = $(".product")
     $("#sort").change(function () {
         var selectValue = $("select#sort option:selected").val();
         if (selectValue == 1) {
-            var $productWrapper = $('.productsDiv');
-            $('.product').sort(function (a, b) {
+     
+            $product.sort(function (a, b) {
                     return +a.dataset.price - +b.dataset.price;
                 })
                 .appendTo($productWrapper);
         } else if (selectValue == 2) {
-            var $productWrapper = $('.productsDiv');
-            $('.product').sort(function (a, b) {
+            
+            $product.sort(function (a, b) {
                     return -a.dataset.price - -b.dataset.price;
                 })
                 .appendTo($productWrapper);
@@ -286,12 +289,59 @@ $(function () {
         }
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                $(".ajaxModal p").html(xmlhttp.responseText);
+                $(".ajaxModal").append(xmlhttp.responseText);
             }
         }
         xmlhttp.open("GET", "ajax.txt", true); 
         xmlhttp.send();
     }
 /***************************************************************/
+// Фильтрация с помощью слайдера цены
+// $(".sliderRange, .ui-slider-handle").click(function() {
+// var max = $("#amountMax").val();
+// var min = $("#amountMin").val();
+// var prodArray = $('.product');
+// priceFilter();
+// 	function priceFilter() {
+// for (var i = 0; i < prodArray.length; i++) {
+// 	var it = prodArray[i];
+// 	var n = $.attr(it, 'data-price');
+	
+// 	if ((n > min) && (n < max)) {
+// 		it.hide();
+// 	}
+// 	else{
+// 		prodArray[i].css("display", "none");
+// 	}
+// 	}
+	
+// }
+// });
+ /***************************************************************/
+ // Фильтр по категориям
+ $(".subSideBar li").click(function(e) {
+ 	e.preventDefault();
+ 	console.log($(this).index());
 
+ 	switch ($(this).index()) {
+  case 0:  
+ 	var filt = $product.filter('[data-type="blanket"]');
+	$product.hide(600);
+    break;
+   case 1:  
+ 	var filt = $product.filter('[data-type="cover"]');
+	$product.hide(600);
+    break;
+  case 2:  
+ 	var filt = $product.filter('[data-type="gobelen"]');
+	$product.hide(600);
+    break;
+
+  case 4:
+   var filt = $product;
+    break;
+}
+
+filt.show(600);
+ });
 });
