@@ -9,17 +9,45 @@
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="libs/FAw/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+
 
 </head>
 <body>
-	<header class="header">
+	<style type='text/css'>
+	#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(31, 205, 255, 0.5);
+		
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('img/camera-loader.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+    border-radius: 100%;
+    background-color: #fff;	
+
+}
+</style>
+<div id="page-preloader"><span class="spinner"></span></div>
+	<header class="header" id='home'>
 		<div class="topLine">
 		<div class="container no-gutter">
 			<div class="row">
@@ -32,11 +60,11 @@
 			<nav class="mainNav">
 
 				<ul>
-					<li><a href="">home</a></li>
-					<li><a href="">about</a></li>
-					<li><a href="">projects</a></li>
-					<li><a href="">news</a></li>
-					<li><a href="">contact</a></li>
+					<li><a href="#home" class='active'>home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#news">news</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -90,7 +118,7 @@
 		<p class='h3Description'>Discover elegant solution for your online business, fast, reliable, affordable.</p>
 		<img src="img/bizPic.png" alt="">
 		</div>
-		<div class="advantages">
+		<div class="advantages" id='about'>
 			<div class="container no-gutter">
 			<div class="col-md-4 col-sm-12 advant">
 				<i class="fas fa-heart"></i><h4>Fresh & Clean Design</h4>
@@ -109,7 +137,7 @@
 </div>
 
 </section>
-<section class="teamSection">
+<section class="teamSection" id='about'>
 	<div class="container no-gutter">
 	<h3>Who We Are? Meet Our Team!</h3>
 	<p class="h3Description">We listen, we discuss, we advise and develop. We love to learn and use the latest technologies.</p>
@@ -215,7 +243,7 @@ mauris scelerisque eu proin nec urna quis.</p>
 					</div>
 	</div>
 </section>
-<section class="worksSection">
+<section class="worksSection" id='projects'>
 
 		<div class="sectTitle">
 			<div class="container no-gutter">
@@ -238,64 +266,64 @@ mauris scelerisque eu proin nec urna quis.</p>
 
 	<div class="col-sm-4 col-xs-12 workOwerlay" >
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic1.jpg" alt="pic1">
-			<a href="#" class="workTitleLink">Environment Logos Set</a>
+			
+			<a href="img/prettyPhotoImages/111/pic1.jpg" class="workTitleLink"><img src="img/prettyPhotoImages/pic1.jpg" alt="pic1">Environment Logos Set</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic2.jpg" alt="pic2">
-			<a href="#" class="workTitleLink">Beag Simple WEB UI</a>
+			
+			<a href="img/prettyPhotoImages/111/pic2.jpg" class="workTitleLink"><img src="img/prettyPhotoImages/pic2.jpg" alt="pic2">Beag Simple WEB UI</a>	
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic3.jpg" alt="pic3">
-			<a href="#" class="workTitleLink">Pop Candy Text Effect</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic3.jpg" alt="pic3">Pop Candy Text Effect</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic4.jpg" alt="pic4">
-			<a href="#" class="workTitleLink">User Interface Elements</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic4.jpg" alt="pic4">User Interface Elements</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic5.jpg" alt="pic5">
-			<a href="#" class="workTitleLink">Stationery Branding Mock Up</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic5.jpg" alt="pic5">Stationery Branding Mock Up</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic6.jpg" alt="pic6">
-			<a href="#" class="workTitleLink">Darko - Business Card Mock Up</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic6.jpg" alt="pic6">Darko - Business Card Mock Up</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic7.jpg" alt="pic7">
-			<a href="#" class="workTitleLink">Foil Mini Badges</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic7.jpg" alt="pic7">Foil Mini Badges</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 	<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-			<img src="img/prettyPhotoImages/pic8.jpg" alt="pic8">
-			<a href="#" class="workTitleLink">Woody Poster Text Effect</a>
+			
+			<a href="#" class="workTitleLink"><img src="img/prettyPhotoImages/pic8.jpg" alt="pic8"> Woody Poster Text Effect</a>
 			<span class="views"><i class="fas fa-eye"></i>215</span><a href="#" class="like"><i class="far fa-heart"></i>15</a>
 		</div>
 	</div>
 			<div class="col-sm-4 col-xs-12 workOwerlay">
 		<div class="imgDiv">
-		<img src= 'img//prettyPhotoImages/pic9.jpg' alt="pic">
-		<a class = 'workTitleLink' href="#">Recycled Paper - Business Card Mock Up</a>
+		
+		<a class = 'workTitleLink' href="#"><img src= 'img//prettyPhotoImages/pic9.jpg' alt="pic">Recycled Paper - Business Card Mock Up</a>
 		<span class="views"><i class="fas fa-eye"></i>215</span> <a href="#" class="like"><i class="far fa-heart"></i>14</a>
 	</div>
 	</div>
@@ -314,7 +342,7 @@ LOAD MORE PROJECTS</a>
 
 
 </section>
-<section class="newsSection">
+<section class="newsSection" id='news'>
 			<div class="sectTitle">
 
 	<h2>What's new?</h2>
@@ -367,7 +395,7 @@ LOAD MORE PROJECTS</a>
 		<div class="btns"><a href="" class="button"><i class="fas fa-arrow-down"></i>
 LOAD MORE news</a></div>
 </section>
-<section class="formSection">
+<section class="formSection" id='contact'>
 	<div class="sectTitle">
 	<h2>Got a Question? We’re Here to Help!</h2>
 	<p >Get in touch with us</p>
@@ -452,6 +480,7 @@ LOAD MORE news</a></div>
 <!-- <script src="js/scripts.min.js"></script> -->
 <script src='libs/jquery/dist/jquery.min.js'></script>
 <script src="js/waypoint.min.js"></script>
+
 <script src="js/animate.js"></script>
 <script src="js/common.min.js"></script>
 <script src="libs/slick/slick.js"></script>
